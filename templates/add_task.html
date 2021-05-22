@@ -5,7 +5,8 @@
 
     <!-- Start add task form -->
         <div class="row card-panel grey lighten-5">
-            <form class="col s12" method="POST" action"">
+            <form class="col s12" method="POST" action"{{ url_for("add_task") }}">
+                <!-- Start Task Category Dropdown Row -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
@@ -18,6 +19,8 @@
                         <label>Task Category</label>
                     </div>
                 </div>
+                <!-- End Task Category Dropdown Row -->
+                <!-- Start Task Name Row -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-pencil-alt prefix light-blue-text text-darken-4"></i>
@@ -25,6 +28,8 @@
                         <label for="task_name">Task Name</label>
                     </div>
                 </div>
+                <!-- End Task Name Row -->
+                <!-- Start Task description Row -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
@@ -32,7 +37,8 @@
                         <label for="task_description">Task Description</label>
                     </div>
                 </div>
-                
+                <!-- End Task description Row -->
+                <!-- Start Due Date picker Row -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-calendar-alt prefix light-blue-text text-darken-4"></i>
@@ -40,7 +46,8 @@
                         <label for="due_date">Due Date</label>
                     </div>
                 </div>
-
+                <!-- End Due Date picker Row -->
+                <!-- Start is urgent? checkbox Row -->
                 <div class="row">
                     <div class="input-field col s12">
                         <div class="switch">
@@ -53,7 +60,14 @@
                           </div>
                     </div>
                 </div>
-
+                <!-- End is urgent? checkbox Row -->
+                <!-- Start submit button Row -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button type="submit" class="btn-large light-blue darken-1 text-shadow">Add Task <i class="fas fa-plus-square right"></i></button>
+                    </div>
+                </div>
+                <!-- End submit button Row -->
             </form>
         </div>
     <!-- End add task form -->
