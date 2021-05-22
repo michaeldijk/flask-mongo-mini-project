@@ -4,4 +4,6 @@ $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"});
     // Tasks expander, JQuery
     $('.collapsible').collapsible();
+    // Tooltip, JQuery
+    $('.tooltipped').tooltip();
   });
